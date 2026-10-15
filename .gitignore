@@ -1,0 +1,12 @@
+.DS_Store
+__pycache__/
+*.pyc
+.Rhistory
+.RData
+.Rproj.user/
+
+# 데이터·결과물은 올리지 않는다 (사람 대상 시료)
+data/
+output/
+*.qza
+*.biom
