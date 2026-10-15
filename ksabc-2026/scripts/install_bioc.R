@@ -1,0 +1,8 @@
+.libPaths(c('~/R_libs', .libPaths()))
+options(repos = c(CRAN = 'https://cran.rstudio.com/'), Ncpus = max(1, parallel::detectCores()-2))
+if (!requireNamespace('BiocManager', quietly = TRUE)) install.packages('BiocManager', lib='~/R_libs')
+library(BiocManager)
+bioc_pkgs <- c('ggtree','ggtreeExtra','treeio','ComplexHeatmap','microbiome')
+to_inst <- setdiff(bioc_pkgs, rownames(installed.packages()))
+if(length(to_inst)) BiocManager::install(to_inst, ask=FALSE, update=FALSE, lib='~/R_libs')
+for(p in bioc_pkgs) cat(sprintf('%-18s : %s\n', p, requireNamespace(p, quietly=TRUE)))

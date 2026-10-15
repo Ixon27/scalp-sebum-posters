@@ -4,6 +4,7 @@
 
 | 폴더 | 학회 | 포스터 주제 |
 |---|---|---|
+| [ksabc-2026](ksabc-2026/) | 2026 한국응용생명화학회 (KSABC) | 지루성 두피의 공존 네트워크 재편과 *Lawsonella* — ⚠️ 네트워크 결과는 이후 철회 (폴더 README 참고) |
 | [msk-2026](msk-2026/) | 2026 International Meeting of the Microbiological Society of Korea (MSK 2026) | 수분은 다양성을, 피지는 우점 속 사이 균형을 결정한다 — 두피 세균 군집의 독립적인 두 생리 축 |
 
 각 폴더의 README 에 분석 순서, 필요한 입력, 실행 환경이 적혀 있습니다.
